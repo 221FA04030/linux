@@ -1,0 +1,19 @@
+Bandit Level 3 → Level 4
+Level Goal
+
+The password for the next level is stored in a hidden file in the inhere directory.
+
+
+bandit3@bandit:~$ ls
+inhere
+bandit3@bandit:~$ cat inhere
+cat: inhere: Is a directory
+bandit3@bandit:~$ cd inhere
+bandit3@bandit:~/inhere$ ls
+bandit3@bandit:~/inhere$ ls -A
+...Hiding-From-You
+bandit3@bandit:~/inhere$ cd ...Hiding-From-You
+-bash: cd: ...Hiding-From-You: Not a directory
+bandit3@bandit:~/inhere$ cat ...Hiding-From-You
+xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+ 

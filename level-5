@@ -1,0 +1,23 @@
+Bandit Level 4 → Level 5
+Level Goal
+
+The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+
+bandit4@bandit:~$ ls
+inhere
+bandit4@bandit:~$ cd inhere
+bandit4@bandit:~/inhere$ ls -A
+-file00  -file01  -file02  -file03  -file04  -file05  -file06  -file07  -file08  -file09
+bandit4@bandit:~/inhere$ cat ./-file00
+□F1d□aIڗ□3n̊□□□□□7□□@Ԭ□□ci^□bandit4@bandit:~/inhere$ cat ./-file01
+□□□Nm□□□□t□□□~
+□□L]y□□□wæ□□□□bbandit4@bandit:~/inhere$ cat ./-file02
+Yi□u`p□L),□=□□□7□=動_g3}□^܎O3bandit4@bandit:~/inhere$ cat ./-file03
+a0q□܃□□b□□H~
+            R>□□□□ˡ□□b□bandit4@bandit:~/inhere$ cat ./-file04
+□□□□□r□ul□□□|v,□c`□E□□JC□□H)bandit4@bandit:~/inhere$ cat ./-file05
+□.□6□□□f□□□f□ku□        cc4ȅ2□□wk□pt□bandit4@bandit:~/inhere$ cat ./-file06
+□?/□[□□?
+        x□□
+           □S7Y]□□1ܿV□□□7bandit4@bandit:~/inhere$ cat ./-file07
+6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG

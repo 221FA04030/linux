@@ -1,0 +1,17 @@
+Bandit Level 1 → Level 2
+Level Goal
+
+The password for the next level is stored in a file called - located in the home directory
+Commands you may need to solve this level
+
+ls , cd , cat , file , du , find
+
+command : 
+ls
+you find read.me file
+
+cat read.me 
+
+u can see the password.
+
+The password you are looking for is: 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR

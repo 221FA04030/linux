@@ -1,0 +1,10 @@
+Bandit Level 1 → Level 2
+Level Goal
+
+The password for the next level is stored in a file called - located in the home directory
+
+command : 
+
+bandit1@bandit:~$ cat ./-
+PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
+bandit1@bandit:~$ 

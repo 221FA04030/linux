@@ -1,0 +1,105 @@
+Bandit Level 5 → Level 6
+Level Goal
+
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+
+    human-readable
+    1033 bytes in size
+    not executable
+
+andit5@bandit:~$ ls
+inhere
+bandit5@bandit:~$ cd inhere
+bandit5@bandit:~/inhere$ ls
+maybehere00  maybehere03  maybehere06  maybehere09  maybehere12  maybehere15  maybehere18
+maybehere01  maybehere04  maybehere07  maybehere10  maybehere13  maybehere16  maybehere19
+maybehere02  maybehere05  maybehere08  maybehere11  maybehere14  maybehere17
+bandit5@bandit:~/inhere$ ls -la
+total 88
+drwxr-x--- 22 root bandit5 4096 Sep 26 21:54 .
+drwxr-xr-x  3 root root    4096 Sep 26 21:54 ..
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere00
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere01
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere02
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere03
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere04
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere05
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere06
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere07
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere08
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere09
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere10
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere11
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere12
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere13
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere14
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere15
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere16
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere17
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere18
+drwxr-x---  2 root bandit5 4096 Sep 26 21:54 maybehere19
+bandit5@bandit:~/inhere$ find . f -size 1033c ! -executable
+./maybehere07/.file2
+find: ‘f’: No such file or directory
+bandit5@bandit:~/inhere$ find . -type f -size 1033c ! -executable
+./maybehere07/.file2
+bandit5@bandit:~/inhere$ cd ./maybehere07/.file2
+-bash: cd: ./maybehere07/.file2: Not a directory
+bandit5@bandit:~/inhere$ cd ./maybehere07
+bandit5@bandit:~/inhere/maybehere07$ ls
+-file1  -file2  -file3  spaces file1  spaces file2  spaces file3
+bandit5@bandit:~/inhere/maybehere07$ cat ./-file1
+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
+bandit5@bandit:~/inhere/maybehere07$ cat ./-file2
+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|□□T□#u_□R□□□=□&□□□□L□ܞ8&□□P□□□1j|+□□S□□>□D}□□□□□VՔk6;]e□□ܦ□□܎)□9P28xiN□□□□R$8MVDnEpih2YXQZ5yP66TfoI
+v3Jth5kRWApANFg6trS6UPHsvEIRBUjknjqdLzuGUo86C76a1nXvTXKXiXOFKk}ɼ□k□□□□□□□֙□mP□□"6□}y□□OQYkrvpufMJFtBgy
+EfWSs52rzbpzTqZST7vmLPEI0iD2PuCCBHwx1P14n1HPfwNdvDezkllurmVodiE                      rR□□□□□□s□□۠JI□□□/□□□|□□□!<n#nĲ□□□;□⁕□□□ás;□□4□T□□07$ cat ./-file3
+□יb}8L□3!3□X□□$&SCa□□□□Ȣ□□□□□□□-N□.□W*䲬u□□□□<□mBګ□ □x□d□□x□~□a2"s□□□/□k;;□□+□□l□□e□□□Q)□墎|□□؄%□y□A□□
+□□□.□□□N□p`□□ŵ>□o#^□ff□܅
+]*□□□      □□2dӟ-□o□□□'&□#2□$□□□b□□□/□
+L□□o□yZ4o□`0ϭEƩm□a□[P□P□*□□2□□□□□□□□    /޸□q˙
+□□+□□"^6?r                   □□□JINݜj□□{=□□;□je□S�□□'□Q>HUg0□u□□□□□□□x□l□CT□ݸH□#W
+□□□OJ□8r□□□□4□ڸ□□□□϶1?s□□□□□□čY□□_u□B                                   9□□□P□□□□□□□ē□□27□4□□□9:□fAP□□M□M□□nWd&□0□A□□□□m□)F_*qG |}@□□*□□<□m0□Z□y□□9□□
+)4T^□"\□□A5]=□□W□□□□□݀□7□R□□щ=R□□□&□□□v□□□□Ph□Ob□□□□\W□-□-{□f□+□□□&□□□.□□□□□ZmN(o□□□!T□rO□□
+□IB\kO5□8BP□>e□m                                          N□
+q.팣□□  □ݱ□N□e□□□□□{D□3□h5\/X□□
+AR0□□S□□@□f□Bu□zq□r,23}PB□□<□7|_□□C□□□□□t□p7□CIܣɬC□@□w.□□(m,□□□□□[□□Z□Fo□□□
+                                q□□*□□□Q□□S□Y&>□□{□i9n                     @□□FB□□□□i□
+at□□□BS&<#□□;Ai4□□Pav□□□□;qX3M□/□□n□□V                                                □□^1□[    □□□ՠ□
+<[:□□9□□$"!□□□1F□□67□`4]□□□□□J:c4□□kM*□□□L□Wʑ(Ŀ□□□□□/□  \v)□_e□□□ݚ□vk□□□d=□□    8EjV}□B□+□Iu0□GI□CK□□□□□□□Ʉ&K□5□z□K
+□□>ڲ□□L□U□□□'□gw□□□*□钜□□□5□□]҆□□"□□
+                                   □□|8□8□□□□))□□□□%□y□□□□□6
+                                                            "□0□□□9$i□□□□ǟfpQ□□□Ԝ0□□ާ□□□A□□*□/[□□3□Oy□□)□Tl6□□□□f□□mI□3l□>R□)W;□□□□
+□ʪ□□□□□v.□fM8□□□□□8□□□j□žO(□N□□□O□h□N□nje>□□^]B□[□□□□ԃ□(□       i□Z□ǋ□□ćw□□□8X□p□Va}□□$t|
+                                                                                         □nC□O□邠□.I□□l□x□.C;□□͎□□□U^,□`<□□93□1□□□[94□\HE�□□"□□□s9□=S□E□□7□□ □□□[□□E□o□□n□Op□rl□□0a□□□□□4b□□o~p
+ƶ□□□□□□ˇ□□□07V□□□□□     □□'
+                           □R□□{אӽF□□G+□□ 4□□$□]F□>□d□M□□x5□E}9[2t□□{BU|□-□□□L□□□9_w]□□□;□□□Ds□~□□□M□□;□.□□s□w□k□□ �□□3□□Pܲ-□;>□?R?V□L□8崗*□ʁ□□□□□□□z□Gbnd+ □□□□□□□□wYZC□x□V%□;□I□□□□H□□:8□j~□;□□l□□h□□>□□w□66□□p□<i□□□
+1~%□i?g-5□q□□8□=H□□□□□lc-□qw□L□Wpz{F□w□□=□#□n□□□□□□
+                                                   aɤ□□□Hx□□□□AB□□`Y□V@□□□□□k□r□ewf□□□□<□N□     □□□□□\□^P
+□-T(□□□4'l□Q□:n□,□□M□□o□□□3
+                            □6H□kAɺhat□□zm□□yJ□□□8□Q9□
+                                                      □Q□_LSbk□FM@□
+                                                                   □R□□V□.□□□□
+                                                                              ͜)O□□>□4□□)□\B(□□Pi-A□□B□~
+   □I□еI□□k□{=R□b□1th□□□1□1□
+□□)□Q□L□n□□□y□@□□□/□5□□□_□l6□4£6□M□□□߂□I□U□Lѓ□□□@□□□T□□□□I□c□□;□□□U□□□SN
+□□ÿ□s/□□#?□□□□□□]□□=□E□□□oi□□□□j□o,
+                                   z□□Ӥ`6D□□~!□□□□H□    U□u□□7>ֳ□*□@]□j□□□�□g□□
+                                                                              ˿□Rx□K^□G□"]_□I□t□□□t□Guo!□(!□□Hz□q$v□□□i□□lGQ□□f□B3h_ܺ□ђ□Y□□[o,5TN\y׌ww□i□□□>9 □□NE□□O6□□u.z□]w9□.□□BZoH□P□□וB□□□W□□□□□□□□h□□       □□.W{□_□ AI□□□□g1hN□□+Њ(ms□□□8□□if)H□□j,
+l#□߽□~□¼$/□□□□□r□□'□(0L□□□#□$                    x□[l□□□;□R□□D5□N_P□□□~□□s□□□é&□□□□
+□=N□□□□□        O3J□□□□+#C□□□b□, {lDa=G□ͱB□z□□□□#□˹□□□kI□+□□ҷ□J□;□□□N□u□Ǟ*□□□□k□[□□@□J□□□□OM
+                                                                                            □□#□□□wo□t□\□A□□MxRZ□;&jU□□□□□O□□□AyD.#□B□$□/xRq□
+G□□
+y□□C□1□h□,y□□
+U□□□□H9□□) □r:
+              □□+□□□□<□□□□_B□□bandit5@bandit:~/inhere/maybehere07$ cat file1
+cat: file1: No such file or directory
+bandit5@bandit:~/inhere/maybehere07$ cat ./file1
+cat: ./file1: No such file or directory
+bandit5@bandit:~/inhere/maybehere07$ cat file1
+cat: file1: No such file or directory
+bandit5@bandit:~/inhere/maybehere07$ ls
+-file1  -file2  -file3  spaces file1  spaces file2  spaces file3
+bandit5@bandit:~/inhere/maybehere07$ cat .file2
+pXa26xhMWaC2SvDotA4r9EgZkulOeSBW
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        bandit5@bandit:~/inhere/maybehere07$ 
