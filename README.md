@@ -1,3 +1,5 @@
+currently playing the OverTheWire Bandit game and solving its levels.
+
 DESCRIPTION
 
 Section 1 of the manual describes user commands and tools, for example, file manipulation tools, shells, compilers, web browsers, file and image viewers and editors, and so on.
